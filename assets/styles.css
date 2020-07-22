@@ -12,6 +12,7 @@
 }
     .widget-layout button {
         margin:10px;
+        width:200px;
     }
 
 .title {
@@ -29,9 +30,9 @@
         align-self: flex-end;
     }
 .tile {
-    height: 33vh;
+    height: 25vh;
     width: 33%;
-    line-height: 33vh;
+    line-height: 25vh;
     text-align: center;
 }
 .tile-1, .tile-4 {
@@ -61,6 +62,11 @@
 }
 /*small screen*/
 @media (max-width: 767px) {
+
+    .widget-layout button {
+        width: auto;
+    }
+
     .title {
         height: 50px;
         background-color: #000;
@@ -70,7 +76,12 @@
         height: 12vh;
         width: 100%;
         line-height: 12vh;
+        margin-bottom:5px;
     }
+
+        .tile span {
+            color: #000;
+        }
 
     .tile-1, .tile-4 {
         background-color: #CCC;
